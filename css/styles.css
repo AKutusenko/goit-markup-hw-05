@@ -267,7 +267,6 @@ h3 {
 
 .advantages-list-item {
   width: 270px;
-  min-height: 101px;
 }
 
 .advantages-list-item:not(:last-child) {
@@ -554,7 +553,8 @@ h3 {
   padding: 6px 22px;
 
   transition: background-color var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1),
-    color var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+    color var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list-btn:hover,
@@ -593,8 +593,8 @@ h3 {
   transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-list-link:hover,
+.projects-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -624,8 +624,8 @@ h3 {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.projects-list-item:hover .project-photo-overlay,
-.projects-list-item:focus .project-photo-overlay {
+.projects-list-link:hover .project-photo-overlay,
+.projects-list-link:focus .project-photo-overlay {
   transform: translateY(0);
 }
 
